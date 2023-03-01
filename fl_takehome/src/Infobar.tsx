@@ -29,7 +29,8 @@ export function Infobar(props:Info){
         )
     }
     // fun ts issues
-    let data:StudentData = props.lookup.get(student);
+    let empty = {destination:"not found",arrival:"not found",driver:"not found",plate:"not found"}
+    let data:StudentData = props.lookup.get(student) ?? empty;
     const dropdownList = props.students.map(studentMenuItem)
     // {
     //     destination:"School",
