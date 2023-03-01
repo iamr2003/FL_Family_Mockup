@@ -42,7 +42,7 @@ export function Infobar(props:Info){
     let loc = data.destination //transition to enum later
     let locData = loc == "School" ? <span className='text-green-600'>School</span>: <span className='text-blue-600'>Home</span>;
     return (
-        <div className="m-6 p-4 rounded-xl bg-neutral-50 items-center drop-shadow">
+        <div className="m-6 p-4 rounded-xl bg-neutral-50 items-center drop-shadow max-w-max">
             <div className='columns-2 text-left'>
                 <div>
                     <div className='items-start'>
